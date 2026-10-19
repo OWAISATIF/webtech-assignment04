@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slides Application</title>
+  <link rel="stylesheet" href="assignment4.css">
+  
+  
+</head>
+<body>
+
+  <header class="top-bar">
+        <h1>Markdown Slides App</h1>
+        <div class="actions">
+            <button id="create-btn">Create New</button>
+            <button id="edit-btn">Edit Mode</button>
+            <button id="save-btn">Save (Ctrl+S)</button>
+            <button id="present-btn">Present</button>
+        </div>
+    </header>
+
+  <main id="app-container" class="workspace">
+    <section class="editor-section">
+      <label for="markdown-input">Markdown Input:</label>
+      <textarea id="markdown-input" placeholder="Type markdown here... Use --- to separate slides."></textarea>
+    </section>
+
+    <section class="preview-section" id="presentation-viewport">
+      <div id="slide-display" class="slide-content"></div>
+
+      <div class="controls">
+        <button id="prev-btn">Left</button>
+        <span id="slide-counter">1 / 1</span>
+        <button id="next-btn">Right</button>
+        <button id="fullscreen-btn">Full Screen</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="assignment4(2.0).js"></script>
+</body>
+</html>
